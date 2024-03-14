@@ -7,8 +7,8 @@ import projectFour from '../../assets/projects/projectFour.png'
 const ProjectComponent = forwardRef((props, ref) => {
     return (
         <div ref={ref} className='mt-20'>
-            <div className='grid md:grid-cols-2 p-4 '>
-                <div className=" w-96 rounded-full object-cover object-center row-span-1 place-self-center p-4">
+            <div className='grid md:grid-cols-1 p-4 '>
+                <div className="rounded-full object-cover object-center row-span-1 place-self-center p-4">
                     <img src={projectOne}></img>
                     <p>Solo frontend project created with JS HTML and CSS</p>
                     <a href='https://github.com/GlitterAngle/Pong' className='underline'>Code</a>

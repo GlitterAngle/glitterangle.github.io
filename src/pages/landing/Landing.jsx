@@ -6,6 +6,7 @@ import AboutComponent from '../../components/about/AboutComponent'
 import logo from '../../assets/Logo/logoHeart.png'
 import Nav from '../../components/nav/Nav'
 
+
 const Landing = () => {
   const [flip, setFlip] = useState(false)
   const navRef = useRef(null)
@@ -49,7 +50,7 @@ const Landing = () => {
         <h2 className='font-semibold text-2xl'>Engineering Your Vision <br /> Turning Ideas into Impactful Software</h2>
         <br/>
         <p className='text-lg'>Your curiosity is the first step to uncovering the unique ways I bring technology to life. Let's explore the possibilities together.</p>
-        <animated.button style={color} onClick={scrollToNav} className='bg-transparent text-lg hover:animate-lift-up'>Enter</animated.button>
+        <button onClick={scrollToNav} className='bg-[#1E1D1E] text-lg '>Enter</button>
       </div>
       </animated.div>
       <Nav ref={navRef} aboutSectionRef={aboutSectionRef} projectsSectionRef={projectsSectionRef} contactSectionRef={contactSectionRef}/>
